@@ -1,0 +1,133 @@
+
+
+  // if (Flv.isSupported()) { // 检测是否支持，和 FlvPlugin 是一个方法
+  //   // const video = document.querySelector("#liveVideo")
+  //
+  //   const flv = new Flv({
+  //     media: liveVideoRef.value,
+  //     isLive: true,
+  //     // media: video
+  //     // flv 参数
+  //
+  //     flv: {
+  //       maxReaderInterval: 5000, // 默认值 5000 毫秒
+  //       retryCount: 3, // 重试 3 次，默认值
+  //       retryDelay: 1000, // 每次重试间隔 1 秒，默认值
+  //       loadTimeout: 10000, // 请求超时时间为 10 秒，默认值
+  //       fetchOptions: {
+  //         // 该参数会透传给 fetch，默认值为 undefined
+  //         // mode: 'cors'
+  //       },
+  //
+  //       // 直播参数
+  //       targetLatency: 5, // 直播目标延迟，默认 5 秒
+  //       maxLatency: 10, // 直播允许的最大延迟，默认 10 秒
+  //       disconnectTime: 0 // 直播断流时间，默认 0 秒，（独立使用时等于 maxLatency）
+  //     }
+  //   })
+  //   flv.load(`${liveRoom.value}.${watchingType.value}?roomId=${roomId}&token=${token}`) // 进行拉流
+  // }
+
+
+  // if (FlvPlugin.isSupported()) { // 第一步
+  //   const player = new Player({
+  //     id: 'liveVideo',
+  //     url: `${liveRoom.value}.${watchingType.value}?roomId=${roomId}&token=${token}`, // flv 流地址
+  //     isLive: true,
+  //     plugins: [FlvPlugin], // 第二步
+  //     flv: {
+  //       maxReaderInterval: 5000, // 默认值 5000 毫秒
+  //       retryCount: 3, // 重试 3 次，默认值
+  //       retryDelay: 1000, // 每次重试间隔 1 秒，默认值
+  //       loadTimeout: 10000, // 请求超时时间为 10 秒，默认值
+  //       fetchOptions: {
+  //         // 该参数会透传给 fetch，默认值为 undefined
+  //         mode: 'cors'
+  //       },
+  //
+  //       // 直播参数
+  //       targetLatency: 5, // 直播目标延迟，默认 5 秒
+  //       maxLatency: 10, // 直播允许的最大延迟，默认 10 秒
+  //       disconnectTime: 0 // 直播断流时间，默认 0 秒，（独立使用时等于 maxLatency）
+  //     }
+  //   })
+  // }
+
+  //
+  // if (mpegts.getFeatureList().mseLivePlayback) {
+  //   const player = mpegts.createPlayer({
+  //     type: watchingType.value,
+  //     // could also be mpegts, m2ts, flv ，m3u8
+  //     isLive: false,
+  //     url: `${liveRoom.value}.${watchingType.value}?roomId=${roomId}&token=${token}`,
+  //   });
+  //   player.attachMediaElement(liveVideoRef.value!);
+  //   player.load();
+  //   player.play();
+  // } else {
+  //   ElMessage.error("此浏览器不支持观看直播，请升级或切换浏览器")
+  // }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+   {
+          duration: 20000, //弹幕持续显示时间,毫秒(最低为5000毫秒)
+          //moveV: 100, //弹幕匀速移动速度(单位: px/秒)，设置该项时duration无效
+          id: '1', //弹幕id，需唯一
+          start: 2000, //弹幕出现时间（毫秒）
+          prior: true, //该条弹幕优先显示，默认false
+          color: true, //该条弹幕为彩色弹幕，默认false
+          txt: '长弹幕长弹幕dfsdfsfsdgdfhgfh长弹幕', //弹幕文字内容
+          style: {
+            //弹幕自定义样式
+            color: '#ff9500',
+            fontSize: '20px',
+            padding: '2px 11px'
+          },
+          mode: 'scroll', //显示模式，top顶部居中，bottom底部居中，scroll滚动，默认为scroll
+        }, {
+          duration: 20000, //弹幕持续显示时间,毫秒(最低为5000毫秒)
+          //moveV: 100, //弹幕匀速移动速度(单位: px/秒)，设置该项时duration无效
+          id: '1', //弹幕id，需唯一
+          start: 2000, //弹幕出现时间（毫秒）
+          prior: true, //该条弹幕优先显示，默认false
+          color: true, //该条弹幕为彩色弹幕，默认false
+          txt: '长弹幕长弹幕长弹幕', //弹幕文字内容
+          style: {
+            //弹幕自定义样式
+            color: '#ff9500',
+            fontSize: '20px',
+            padding: '2px 11px'
+          },
+          mode: 'scroll', //显示模式，top顶部居中，bottom底部居中，scroll滚动，默认为scroll
+        }, {
+          duration: 20000, //弹幕持续显示时间,毫秒(最低为5000毫秒)
+          //moveV: 100, //弹幕匀速移动速度(单位: px/秒)，设置该项时duration无效
+          id: '1', //弹幕id，需唯一
+          start: 2000, //弹幕出现时间（毫秒）
+          prior: true, //该条弹幕优先显示，默认false
+          color: true, //该条弹幕为彩色弹幕，默认false
+          txt: '长弹幕长弹幕长弹幕', //弹幕文字内容
+          style: {
+            //弹幕自定义样式
+            color: '#ff9500',
+            fontSize: '20px',
+            padding: '2px 11px'
+          },
+          mode: 'scroll', //显示模式，top顶部居中，bottom底部居中，scroll滚动，默认为scroll
+        },

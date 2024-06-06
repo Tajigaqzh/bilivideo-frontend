@@ -1,0 +1,10 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer components {
+    /* 自定义弹起动画 */
+    .customer-bounce {
+        @apply hover:animate-bounce delay-150 duration-1000 hover:repeat-1 ease-in-out h-6;
+    }
+}

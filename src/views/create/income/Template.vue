@@ -1,0 +1,7 @@
+<template>
+  模板激励
+</template>
+<script setup lang="ts">
+</script>
+<style scoped lang="less">
+</style>

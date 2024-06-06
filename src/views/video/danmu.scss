@@ -1,0 +1,71 @@
+@media (min-width: 1199px) {
+  .xgplayer {
+    .xgplayer-panel-slider {
+      background-color: hsla(0, 0%, 8%, 0.9);
+      bottom: 80px;
+      height: 320px;
+
+    }
+
+    .xgplayer-danmu {
+      //   color: red;
+      > * {
+        position: absolute;
+        // color: red;
+        white-space: nowrap;
+      }
+    }
+  }
+}
+
+@media (max-width: 1200px) {
+  .xgplayer {
+    .xgplayer-panel-slider {
+      height: 260px;
+      bottom: 20px;
+    }
+  }
+}
+
+.xgplayer .xgplayer-start .xg-icon-play {
+   //background-color: red;
+}
+
+#video-player .xg-controls
+.xg-inner-controls
+.xg-right-grid
+.xg-icon
+.xg-panel-icon {
+  color: #000;
+}
+
+.xg-inner-controls .xg-right-grid .danmu-icon .xgplayer-icon .danmu-switch {
+  background-color: rgb(0, 174, 236);
+  color: rgb(97, 102, 109);
+
+  .txt {
+    color: rgb(97, 102, 109);
+  }
+}
+
+#video-player {
+  .xgplayer-controls {
+    .xg-inner-controls {
+      .xg-right-grid {
+        .xgplayer-panel {
+          //background: red;
+          color: white;
+
+          .xgplayer-panel-icon {
+            svg{
+
+              path{
+                fill: #fff;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}
